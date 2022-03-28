@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="413dp"
+        android:layout_height="54dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/steps"
+        android:layout_height="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logOut"
+        android:layout_width="104sp"/>
+
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        app:layout_constraintStart_toEndOf="@+id/steps"
+        app:layout_constraintTop_toBottomOf="@+id/logOut" />
+
+    <TextView
+        android:id="@+id/moveMinutes"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/steps" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        app:layout_constraintStart_toEndOf="@+id/moveMinutes"
+        app:layout_constraintTop_toBottomOf="@+id/calories" />
+
+    <Button
+        android:id="@+id/pdfGen"
+        android:layout_width="414dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moveMinutes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
